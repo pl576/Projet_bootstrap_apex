@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.container-fluid {
+  height: 15%;
+}
+
+.accueil {
+  animation: animation 20s infinite ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes animation {
+  0% {
+    background-image: url(./apex-legends.jpg);
+  }
+  33.33% {
+    background-image: url(./apex_legend2.jpg);
+  }
+  66.66% {
+    background-image: url(./apex_legend3.jpg);
+  }
+  100% {
+    background-image: url(./apex-legends.jpg);
+  }
+}
+
+.btn {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  background-color: rgb(189, 0, 0);
+  border-radius: 0;
+}
+
+/************************page legende****************/
+
+.legende {
+  background-image: url(./fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**********************page maps**********************/
+
+.card-text {
+  font-size: 1.4em;
+}
+
+#maps .card {
+  height: 125%;
+}
+
+/*************************page streamer********************/
+
+.stream {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
